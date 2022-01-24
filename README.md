@@ -17,7 +17,7 @@ python3 plot_hidden.py
 
 
 The simulation results are written to the npy folder; 
-the subfolders m1/, clickon/, and hidden/ corresponds to the three models  
-User Model 1, Model 2 of dissatisfied user, and model with hidden categories.
+the subfolders m1/, clickon/, and hidden/ correspond to the three models,  
+User model 1, model 2 of dissatisfied user, and the model with hidden categories.
 
-Similarly, the figures are stored under the three subfolders under the plot folder.
+Similarly, the figures are stored under the three subfolders of the plot/ folder.
