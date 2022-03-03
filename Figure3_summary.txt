@@ -1,0 +1,10 @@
+Figure 3-a shows the simulation results for the true average cumulative reward of model 2 (Algorithm 2),
+where categories of items are presented in a fixed order and users continue clicking until seeing a liked item. 
+The results are the average cumulative rewards of 100 simulations.
+There are 100 categories, users are presented with 20 categories of items. In this simulation, user preferred category is 5, which will be presented earlier in the fixed order. The true average (cumulative) reward (Rˆt/t), t = 1, . . . , T , where the server believes the average reward to be R˜t/t. 
+The true reward would approach the value of 1 asymptotically.
+On the other hand, the server will account for all the clicks on items before category 5, resulting in a much larger server believed reward, with a limit of 6.
+
+In the simulation, at time step 200, server believed reward is 8.56 while the true user reward is 0.81 and the true reward from a random server is 0.20.
+
+Figure 3-b shows the results for the same model using the ucb algorithm. At time step 200, server believed reward is 7.49 while the true reward under model 2 and a random server are 0.89 and 0.2 respectively, whcich shows a similar pattern as Figure 3-a.

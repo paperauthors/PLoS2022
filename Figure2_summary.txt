@@ -1,0 +1,2 @@
+Figure 2 is the sumulation for the aerage reward using the UCB algorithm.  The UCB algorithm chooses multiple arms among 100 categories at each time step to return 20 categiries of items(l).
+At time step 200, the average reward reaches 13.56, which shows that UCB algorithm converges faster towards the limit. 

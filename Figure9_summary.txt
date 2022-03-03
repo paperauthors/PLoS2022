@@ -1,0 +1,18 @@
+Figure 9-a shows the average cumulative rewards over 100 simulation runs of Model 3 (Algorithm 3) with full replenishment, 
+the model with hidden categories, where user clicks when they like the item.
+Importantly, the preferred categoties are hidden from the server and items in all served categories are replaced.
+
+In this simulation, we assume that hidden categories are uniformly distributed among 100 categories 
+and the initial reward of each category is 0.5.
+and only a fraction, f0(a) = 0.5, of each category is the true preferred hidden category.  
+The server serves 20 categories at each time step.
+
+With full replenishment, the resources do not deplete and the fractions of hidden categories remain constant.
+As a consequence, there is a tendency to return to the mean rewards of value 10 given that each of the 20 categories has an initial reward of 0.5.
+Figure 9-b shows the difference in reward between model 3 and a random server under full replenishment.
+At time step 1000, model 3 has the average reward of 9.98 while the reward of the random server is 10.
+
+Figure 9 shows that recommender of model 3 still perform less well than the random. Although it is
+occasionally superior, this superiority is not persistent. Incompleteness of representation has 
+led to failures of recommendation that the system cannot observe.
+

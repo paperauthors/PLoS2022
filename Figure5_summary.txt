@@ -1,0 +1,11 @@
+Figure 5 shows the result of a single simulation for the true cumulative reward of model 2 (Algorithm 2),
+where categories of items are presented in a fixed order and users continue clicking until seeing a liked item. 
+There are 100 categories, users are presented with 20 categories of items. In this simulation, user preferred category is 90, 
+which is larger than the size of items served.
+The true average (cumulative) reward (Rˆt/t), t = 1, . . . , T , where the server believes the average reward to be R˜t/t. 
+The servers will gradually favour categories at the front of the list and eventually stops serving the user preferrd category 90.
+The true reward would approach the value of zero asymptotically.
+On the other hand, the server will account for all the clicks on items before category 90, resulting in a much larger server believed reward, with a limit of 20.
+
+In the simulation, at time step 200, server believed reward is 19.89 while the true user reward is 0.06.
+Figure 5 shows similar trajectory as the averaged results over 100 simulations in Figure 4-a.

@@ -1,0 +1,6 @@
+Figure 1 shows the simulation results of model 1 (Algorithm 1) with 100 categories of items (A), the true preference factor of 0.75 for the first 50 categories and 0.5 for the last 50 categories. The simulated system serves 20 items (l) from the first 50 categories due to their higher user preference. 
+The exploration probability is min(1, cK/d^2t), where c=1, K=5, and d=0.25.
+The simulation runs for 3000 time steps and the reward is averaged over 100 repeated simulation runs. 
+At time step 3000, the simulated reward is 14.93, which approaches the limit of 15.
+
+  

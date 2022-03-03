@@ -1,0 +1,21 @@
+Figure 7-a shows the average cumulative rewards over 100 simulation runs of Model 3 (Algorithm 3) with partial replenishment,
+ the model with hidden categories, 
+where user clicks when they like the item and only the clicked items are replaced.
+Importantly, the preferred categoties are hidden from the server. 
+
+In this simulation, the server serves 20 categories at each time step.
+we assume that hidden categories are uniformly distributed among 100 categories 
+and the initial reward of each category is 0.5.
+and only a fraction, f0(a) = 0.5, of each category is the true preferred hidden category.  
+
+As a consequence, because the user exhausts only the category items, there is a natural depletion of the resources
+until 
+the fraction of items left is close to zero and both uniform and random recommender yield a near-zero instantaneous reward.
+The parameter k which is used to approximate the depletion of resources is set to 0.01. Refer to equation (17) for details.
+
+Figure 7-b shows the difference in reward between model 3 and a random server where serving of items are completely random.
+At time step 1000, model 3 has the rewards of 0.51 and a random server 0.5, with a difference of -0.0064.
+Figure 7 shows that even in the case that the learning has no initial bias, it is still no better than the random recommender.
+
+
+

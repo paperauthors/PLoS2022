@@ -1,0 +1,16 @@
+Figure 6 shows the simulation results for the true average cumulative reward of model 2 (Algorithm 2),
+where categories of items are presented in a fixed order and users continue clicking until seeing a liked item. 
+The results are the average cumulative rewards of 100 simulations.
+
+There are 100 categories, users are presented with 20 categories of items. In this simulation, there are multiple user preferred categories; 
+they are categories 3, 26, 45, 77 with preference probabilities of 0.88, 0.62, 0.54 and 0.92 respectively. 
+
+The servers will gradually favour categories at the front of the list and eventually stops serving the user preferrd categories 26, 45, 77 as they are larger than the served size 20.
+ 
+The true reward would approach the value of 0.88  asymptotically.
+On the other hand, the server will account for all the clicks on items before the first preferred category 3, resulting in an asymptotic server believed reward of 5.92.
+
+In the simulation, at time step 200, server believed reward is 7.83 while the true user reward is 0.96 and the true reward from a random server is 0.65.
+
+Figure 6-b shows the results for the same model using the ucb algorithm. At time step 200, server believed reward is 6.08 while the true reward under model 2 and a random server are 1.04 and 0.64 respectively, whcich shows a similar pattern as Figure 6-a. we verify that
+the main asymptotic behavior under model 2 is independent of the learning mechanism used to choose the recommendations.
