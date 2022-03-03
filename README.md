@@ -2,6 +2,9 @@ This is the source code for the paper: When Proxy-Driven Learning Is No Better T
 The Consequences of Representational Incompleteness
 submitted for PLoS 2022.
 
+All the data points used to build the graphs are in csv format in the folder output/
+Summaries of the data for all graphs are also found in the folder output/ 
+
 In the source folder src/
 
 Run the simulations: run the following python simulation scripts:
